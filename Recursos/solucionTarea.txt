@@ -1,3 +1,11 @@
+Cómo determinar si un año es un año bisiesto
+
+	1	Si el año es divisible por 4, vaya al paso 2. De lo contrario, vaya al paso 5.
+	2	Si el año es divisible por 100, vaya al paso 3. De lo contrario, vaya al paso 4.
+	3 	Si el año es divisible por 400, vaya al paso 4. De lo contrario, vaya al paso 5.
+	4	El año es un año bisiesto (tiene 366 días).
+	5	El año no es un año bisiesto (tiene 365 días).
+	
 cómo determinar que día cae una fecha
 N/7 = igual al día de acuerdo a 
 1: Lunes, 2: Martes, 3: Miércoles, 4: Jueves, 5: Viernes, 6: Sábado, 0: Domingo 
@@ -34,12 +42,3 @@ D = al numero del día
 M =  mes, de acuerdo a 
 Enero :0 , Abril :6 , Julio :6 , Octubre:0 , Febrero :3 , Mayo :1 , Agosto:2 
 Noviembre :3 , Marzo :3 , , Junio :4 , , Septiembre :5 , Diciembre :5 
-
-
-Cómo determinar si un año es un año bisiesto
-
-	1	Si el año es divisible por 4, vaya al paso 2. De lo contrario, vaya al paso 5.
-	2	Si el año es divisible por 100, vaya al paso 3. De lo contrario, vaya al paso 4.
-	3 	Si el año es divisible por 400, vaya al paso 4. De lo contrario, vaya al paso 5.
-	4	El año es un año bisiesto (tiene 366 días).
-	5	El año no es un año bisiesto (tiene 365 días).
