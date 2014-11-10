@@ -13,7 +13,6 @@
 
 ;Libreria para simplicidad de entradas y salidas
 %include "io.mac"
-
 ;Segmentos de datos definidos
 .DATA
 ;===> Interfaz Grafica
@@ -45,7 +44,6 @@ ingreseDatos01 db 'Por ejemplo: 18 02 1994',0
 ingreseDia     db 'Ingrese el dia:  _',0
 ingreseMes     db 'Ingrese el mes:  _'0
 ingreseA-o     db 'Ingrese el a~o:  _'0
-
 ;Tag: Lunes 
 lunes00 DB 'LLL', 0
 lunes01 DB 'LLL', 0                                                      
@@ -71,7 +69,6 @@ martes05 DB 'MMMM  MMM  MMM       AAA   RRRR       TT     EEEEEE     SSSS', 0
 martes06 DB 'MMMM  MMM  MMM   AAA AAA   RRR        TT     EE           SSSS', 0 
 martes07 DB 'MMM   MM   MMM  AA  AAAA   RR         TTT    EEE            SSS', 0
 martes08 DB 'MMM   MM   MMMM AAAAAAAAAA RR          TTTTT  EEEEEE   SSSSSSS', 0 
-
 ;Tag: Miércoles
 miercoles00 DB '                                                  LL', 0                  
 miercoles01 DB '                                                  LL', 0                 
@@ -83,7 +80,6 @@ miercoles06 DB ' MMMM MMMMMMM  II   EE  EE  RRRR  CCC     OO  OO  LL  EE  EE SS'
 miercoles07 DB ' MMM  MMM MM   II  EEEEEE   RRR   CC     OO   OO  LL EEEEEE   SSSS', 0     
 miercoles08 DB ' MMM  MM  MM   II  EEE      RR    CC     OO   OO  LL EEE         SSS', 0   
 miercoles09 DB ' MM   MM  MM   II  EEEEEE   RR    CCCCCC  OOOOOO  LL  EEEEEE  SSSSS', 0   
-
 ;Tag: Jueves
 jueves00 DB '   JJJ', 0                                                      
 jueves01 DB '   JJJ', 0                                                      
@@ -99,7 +95,6 @@ jueves10 DB '  JJJ     UUU   UUUU   EEEE       VV         EEEE      SSSS', 0
 jueves11 DB '  JJJ', 0                                                       
 jueves12 DB '  JJ', 0                                                        
 jueves13 DB ' JJ', 0                                                         
-
 ;Tag: Viernes
 viernes00 DB '             II', 0                                                     
 viernes01 DB '            IIII', 0                                                    
@@ -112,7 +107,6 @@ viernes07 DB '   VVV VV   III  EEE        RRR      NNNN   NNN  EEE          SSSS
 viernes08 DB '   VVVVV    III  EEE        RRR      NNNN   NNN  EEE             SSS', 0 
 viernes09 DB '   VVVV     III  EEEEE EEE  RRR      NNN    NNN   EEEE EEE  SSS  SSS', 0 
 viernes10 DB '    VV      IIII    EEEE    RRR      NNN    NNNN    EEEE     SSSSS', 0   
-
 ;Tag: Sábado
 sabado00 DB '                       BBB                           DDD', 0            
 sabado01 DB '                       BB                           DDDD', 0            
@@ -127,7 +121,6 @@ sabado09 DB '  ssssss     AAAAAA   BBB    BBB     AAAAA  DDD    DDDD  OOO    OOO
 sabado10 DB '     ssss  AA  AAAA   BBB    BBB  AAA AAAA  DDD   DDDD   OOO    OOO', 0 
 sabado11 DB ' sss  sss AAA AAAAA   BBB   BBB  AAA AAAAA  DDDDDDD DDD  OOOO  OOO', 0 
 sabado12 DB ' sssssss  AAAAA AAAAA BBBBBBBB    AAAA AAAAA DDDDD  DDDD  OOOOOOO', 0
-
 ;Tag: Domingo
 domingo00 DB '        DD', 0                                                          
 domingo01 DB '       DDD', 0                                                          
@@ -144,6 +137,8 @@ domingo11 DB '                                                   GGG GGGGG', 0
 domingo12 DB '                                                  GG     GGG', 0         
 domingo13 DB '                                                  GGG   GGG', 0          
 domingo14 DB '                                                    GGGG', 0 
-
 ;===> Datos para la logica 
-
+.UDATA
+dia resb 2 ;guarda el dia
+mes resb 2 ;guarda el mes
+a-o resb 4 ;guarda el a-o
