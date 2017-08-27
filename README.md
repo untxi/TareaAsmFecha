@@ -1,6 +1,13 @@
-TareaAsmFecha
-=============
-Estudiante: Samantha Arburola
-Curso     : Arquitectura de computadores
-DeadLine  : 9.nov.2014
-============
+
+
+Tecnológico de Costa Rica
+
+Escuela de Ingeniería en Computación
+
+Curso: Arquitectura de Computadores
+
+Tarea: Ejercicio de ASM (nasm): Fecha
+
+Profesor: Esteban Arias
+
+Semestre II, 2014
